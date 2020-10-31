@@ -3,7 +3,7 @@ let ejsLayouts = require('express-ejs-layouts')
 let db = require('./models')
 let moment = require('moment')
 let app = express()
-
+require('dotenv').config();
 app.set('view engine', 'ejs')
 
 app.use(express.urlencoded({ extended: false }))
